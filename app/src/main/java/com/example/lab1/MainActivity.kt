@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             R.id.convert -> {
                 val toast = Toast.makeText(this, "Невірне значення", Toast.LENGTH_LONG)
                 var enterNumber: Float
-                enterNumber = 0F
+                enterNumber = 0.1F
                 try {
                     enterNumber = mEdit!!.text.toString().toFloat()
                 } catch (e: Exception) {
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                     if (mConvert!!.isChecked) {
-                        if (enterNumber == 0F){
+                        if (enterNumber == 0.1F){
                             toast.show()
                         }
                         else{
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                         }
 
                     } else {
-                        if (enterNumber == 0F){
+                        if (enterNumber == 0.1F){
                             toast.show()
                         }
                         else{
